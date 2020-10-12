@@ -364,3 +364,7 @@ q {font-style: italic;}
 .footer-table li{
   padding-bottom: 7px;
 }
+
+.footer a:hover{
+  color: blue;
+}
