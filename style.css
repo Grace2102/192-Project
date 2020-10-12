@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 2000px;
+}
+/*NAVIGATION*/
+.navbar {
+  width: 100%;
+  height: 100%;
+  background-color:rgb(204, 204, 204);
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.title {
+  line-height: 1.7;
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+  background-color: white;
+}
+
+/*INTRODUCTION*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: black;
+}
+/*DEALS OF THE DAY & PRODUCTS*/
+h1{
+  text-align: center;
+  margin-top: 25px;
+}
+
+section {
+  max-width: 860px;
+  margin: 0 auto 0 auto;
+}
+
+article {
+  margin-top: 10px;
+  margin-top: 20px;
+}
+
+h2, h3, table {
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.search {
+  float: right;
+  margin-top: 8px;
+}
+
+.deals {
+  border-spacing: 20px;
+  padding-bottom: 10px;
+}
+
+.deals img {
+  height: 150px;
+  width: 150px;
+}
+
+.deals td {
+  border: 2px solid gray;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.search {
+  float: right;
+  margin-top: 8px;
+}
+
+table {
+  border-spacing: 20px;
+}
+
+table img {
+  height: 150px;
+  width: 150px;
+}
+
+td {
+  border: 2px solid gray;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.cart-btn{
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cart-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/*FEEDBACK-SLIDER*/
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {font-style: italic;}
+
+.author {color: cornflowerblue;}
+
+/*FEEBACK-MODAL*/
+
+.feedback-section{
+  text-align: center;
+  padding-top: 10px;
+}
+.feedback-section button{
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.modal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal button{
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.modal-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal table {
+  border-spacing: 5px;
+  text-align: left;
+}
+
+.modal input{
+  width: 415px;
+}
+
+.modal td {
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+/*FOOTER*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(204, 204, 204);
+   color: black;
+   text-align: center;
+}
