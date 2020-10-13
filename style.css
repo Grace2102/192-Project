@@ -109,7 +109,6 @@ section {
 }
 
 article {
-  margin-top: 10px;
   margin-top: 20px;
 }
 
@@ -182,8 +181,8 @@ table img {
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
-  margin-left: 190px;
-  margin-right: 190px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .mySlides {
@@ -221,8 +220,8 @@ table img {
     text-align: center;
     padding: 20px;
     background: #ddd;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .dot {
@@ -334,20 +333,19 @@ q {font-style: italic;}
    width: 100%;
    background-color:rgb(202, 247, 239);
    color: black;
-
+   margin: 0 auto 0 auto;
 }
 
 .footer-table{
-
-  width: 80%;
+  width: 900px;
   text-align: left;
-  margin: 10px 50px 0px auto;
+  margin: 10px auto 0px auto;
   border-spacing: 0px;
   height: 80px;
-
 }
 
 .footer-table td{
+  width: 400px;
   padding: 0px;
 }
 
