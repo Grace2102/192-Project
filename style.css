@@ -342,21 +342,22 @@ q {font-style: italic;}
 }
 
 .footer-table{
-  width: 900px;
-  text-align: left;
+  padding-top: 10px;
+  width: 700px;
+  text-align: center;
   margin: 10px auto 0px auto;
-  border-spacing: 0px;
+  border-spacing: 0;
   height: 80px;
 }
 
 .footer-table td{
-  width: 400px;
   padding: 0px;
+  width: 350px;
 }
 
 .contact-table{
-  padding: 5px;
   text-align: left;
+  width: 50px;
 }
 
 .footer-table a{
@@ -366,6 +367,7 @@ q {font-style: italic;}
 
 .footer-table li{
   padding-bottom: 7px;
+  text-align: left;
 }
 
 .footer a:hover{
