@@ -30,6 +30,11 @@ body {
   background-color: white;
 }
 
+.blurb {
+  word-spacing: 1px;
+  text-shadow: 1px 1px white;
+}
+
 
 /*SHOPPING CART*/
 .cart{
