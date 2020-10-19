@@ -8,18 +8,19 @@ body {
 .navbar {
   width: 100%;
   height: 100%;
-  background-color:rgb(202, 247, 239);
   overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/background.jpg);
 }
 
 .link_buttons {
   padding: 10px;
   display: inline;
-  color: black;
   float: right;
   font-size: 2.5vw;
+  color: black;
   text-decoration: none;
-  line-height: 1.2;
 }
 
 .title {
@@ -37,18 +38,6 @@ body {
   background-color: white;
 }
 
-.blurb {
-  word-spacing: 1px;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  font-size: 1.2vw;
-}
-
-.blurb-title {
-  font-size: 2.5vw;
-}
-
-
 /*SHOPPING CART*/
 .cart{
     overflow: auto;
@@ -62,7 +51,6 @@ body {
     margin: 15px 10px 4px 10px;
     padding-bottom: 0px;
 }
-
 .cart-img {
     width: 120px;
     height: 120px;
@@ -99,21 +87,12 @@ body {
     float: right;
 }
 
-/*INTRODUCTION*/
-.container {
-  position: relative;
+/*ABOUT US*/
+
+.blurb {
   text-align: center;
-  color: white;
 }
 
-.intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15px;
-  color: black;
-}
 /*DEALS OF THE DAY & PRODUCTS*/
 h1{
   text-align: center;
@@ -350,7 +329,9 @@ q {font-style: italic;}
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color:rgb(202, 247, 239);
+   background-image: url(images/background.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
    color: black;
    margin: 0 auto 0 auto;
 }
