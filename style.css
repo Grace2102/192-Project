@@ -38,6 +38,27 @@ body {
   background-color: white;
 }
 
+.nav-in-page {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav-in-page li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 15px 5px 15px;
+}
+
+.nav-in-page a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-in-page a:hover {
+  color: blue;
+}
+
 /*SHOPPING CART*/
 .cart{
     overflow: auto;
