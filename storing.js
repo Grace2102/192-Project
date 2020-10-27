@@ -14,3 +14,86 @@ function newcustomerdetails(){
   customerobjs.push(objects);
 
 }
+
+//searching for products
+function searchBar(){
+	let input = document.getElementById('searches').value;
+	let products = document.getElementByClass('product');
+   for (i = 0; i < products.length; i++) {  
+        if (!products[i].innerHTML.toLowerCase().includes(input)) { 
+            products[i].style.display="none"; 
+        } 
+        else { 
+            products[i].style.display="list-item";                  
+        } 
+    } 
+ 
+}
+//console.log(input);I
+
+let iteminfo = [{item:"Black Beans", price: 2.00, quantity:1},
+                {item:"Pasta", price: 1.00, quantity:1},
+                {item:"Watties Spaghetti", price: 2.00, quantity: 1},
+                {item:"Canned Peaches", price: 2.50, quantity:1},
+                {item:"Chicken Soup", price: 2.80, quantity:1},
+                {item:"Corn Soup", price: 2.80, quantity:1},
+                {item:"Tomato Soup", price: 2.80, quantity:1},
+                {item:"Magnum Ice-Cream", price: 5.90, quantity:1},
+                {item:"Cadbury Chocolate", price: 3.50, quantity:1},
+                {item:"Kit-Kat", price: 3.50, quantity:1},
+                {item:"Heiniken Beer", price: 20.90, quantity:1},
+                {item:"Frozen Vege", price: 3.50, quantity:1},
+                {item:"Chicken nuggets", price: 10.80, quantity:1},
+                {item:"Shapes", price: 2.50, quantity:1},
+                {item:"Fries", price: 3.50, quantity:1},
+                {item:"Beverage beers", price: 8.90, quantity:1},
+                {item:"Milo", price: 4.90, quantity:1},
+                {item:"Sprite", price: 2.00, quantity:1},
+                {item:"Fanta", price: 2.00, quantity:1},
+                {item:"Coffee", price: 5.70, quantity:1},
+                {item:"Cola", price: 2.00, quantity:1},
+                {item:"Nescafe", price: 4.50, quantity:1},
+                {item:"Toothpaste", price: 3.00, quantity:1},
+                {item:"Shampoo", price: 6.90, quantity:1},
+                {item:"Body Lotion", price: 5.00, quantity:1},
+                {item: "Hand Sanitizer", price: 2.50, quantity:1},
+                {item:"Deodorant", price: 4.00, quantity:1},
+                {item:"Conditoner", price: 6.00, quantity:1},
+                {item:"Toothbrush", price: 2.00, quantity:1},
+                {item:"Perfume", price: 7.00, quantity:1}];
+let itemsincart = [];  
+
+function addtocart(item){
+	for (i=0; i<itemsincart.length; i++){
+  	if(itemsincart[i].item == item){
+    	itemsincart[i].item.quantity += 1;
+    }
+    else{
+    	for (j=0;j<iteminfo.length;j++){
+      	if (iteminfo[j].item == item){
+        	itemsincart.push(iteminfo[i]);
+        }
+      }
+    
+    }
+  }
+  totalsum();
+	
+}
+//calculating total sum of products added to cart
+function totalsum(){
+	let sum=0;
+  for (i=0; i<itemsincart.length; i++){
+  	sum += itemsincart[i].price * itemsincart[i].quantity;
+  }
+  return sum;
+}
+//storing feedback from users
+function feedback(){
+	let email = docucment.getElementsByname("email");
+  let name = document.getElementsByName("name");
+  let feedback = document.getElementByName("feedback");
+  
+  
+}
+
