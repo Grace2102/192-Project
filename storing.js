@@ -65,7 +65,7 @@ if (!products[i].innerText.toLowerCase().includes(item)) {
   products[i].style.display = 'none';
 
 } else {
-  products[i].style.display = 'list-item';
+  products[i].style.display = 'stack-item';
   console.log(products[i]);
 }
 }
