@@ -1,36 +1,4 @@
 customerobjs = [];
-//accesses the customer details and stores it into an array
-
-function newcustomerdetails(){
-  var objects = {};
-  let name = document.getElementById("name");
-  let address = document.getElementById("address");
-  let bankno = document.getElementById("bankcardno");
-  let email = document.getElementById("email");
-  objects.custname = name;
-  objects.custaddress = address;
-  objects.custbank = bankno;
-  objects.custemail = email; 
-  customerobjs.push(objects);
-
-}
-
-//searching for products
-function searchBar(){
-	let input = document.getElementById('searches').value;
-	let products = document.getElementByClass('product');
-   for (i = 0; i < products.length; i++) {  
-        if (!products[i].innerHTML.toLowerCase().includes(input)) { 
-            products[i].style.display="none"; 
-        } 
-        else { 
-            products[i].style.display="list-item";                  
-        } 
-    } 
- 
-}
-//console.log(input);I
-
 let iteminfo = [{item:"Black Beans", price: 2.00, quantity:1},
                 {item:"Pasta", price: 1.00, quantity:1},
                 {item:"Watties Spaghetti", price: 2.00, quantity: 1},
@@ -61,7 +29,49 @@ let iteminfo = [{item:"Black Beans", price: 2.00, quantity:1},
                 {item:"Conditoner", price: 6.00, quantity:1},
                 {item:"Toothbrush", price: 2.00, quantity:1},
                 {item:"Perfume", price: 7.00, quantity:1}];
-let itemsincart = [];  
+let itemsincart = []; 
+//accesses the customer details and stores it into an array
+
+function newcustomerdetails(){
+  var objects = {};
+  let name = document.getElementById("name");
+  let address = document.getElementById("address");
+  let bankno = document.getElementById("bankcardno");
+  let email = document.getElementById("email");
+  objects.custname = name;
+  objects.custaddress = address;
+  objects.custbank = bankno;
+  objects.custemail = email; 
+  customerobjs.push(objects);
+
+}
+
+//searching for products
+
+const input = document.getElementById('searches');
+
+const products = document.getElementsByClassName('product');
+
+
+input.addEventListener('keyup', (e) => {search(e.target.value.toLowerCase())}
+  );
+
+function search(item){
+  for (i = 0; i < products.length; i++) {
+
+
+if (!products[i].innerText.toLowerCase().includes(item)) {
+  
+  products[i].style.display = 'none';
+
+} else {
+  products[i].style.display = 'list-item';
+  console.log(products[i]);
+}
+}
+}
+
+ 
 
 function addtocart(item){
 	for (i=0; i<itemsincart.length; i++){
