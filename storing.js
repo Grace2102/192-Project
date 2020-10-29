@@ -73,7 +73,7 @@ if (!products[i].innerText.toLowerCase().includes(item)) {
 
  
 
-function addtocart(item){
+function addToCart(item){
 	for (i=0; i<itemsincart.length; i++){
   	if(itemsincart[i].item == item){
     	itemsincart[i].item.quantity += 1;
@@ -89,14 +89,14 @@ function addtocart(item){
   }
   totalsum();
 	
-}
+}let total = document.getElementById("total");
 //calculating total sum of products added to cart
 function totalsum(){
 	let sum=0;
   for (i=0; i<itemsincart.length; i++){
   	sum += itemsincart[i].price * itemsincart[i].quantity;
   }
-  return sum;
+  total.innerText="Total: $"+sum;
 }
 //storing feedback from users
 function feedback(){
@@ -105,5 +105,19 @@ function feedback(){
   let feedback = document.getElementByName("feedback");
   
   
+}
+function displaycart(){
+	for (let i=0;i<myCart.length;i++){
+		for (let j=0; products.length;j++){
+				if (products[j].innerHTML.toLowerCase().contains(myCart[i].item)){
+          products[j].style.display = 'list-item';
+        }
+        
+
+				
+				
+		}
+		
+	}
 }
 
