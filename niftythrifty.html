@@ -13,7 +13,7 @@
       <div class="navbar">
         <span class="title-box"><h1 class="title">Nifty Thrifty</h1></span>
         <span class="buttons">
-          <a class="link_buttons" href="niftythrifty-order.html"><i class="fa fa-shopping-cart"></i></a>
+          <a class="link_buttons" href="niftythrifty-order.html" onclick="displayCart()"><i class="fa fa-shopping-cart"></i></a>
           <a class="link_buttons" href="niftythrifty.html"><i class="fa fa-fw fa-home"></i></a>
         </span>
       </div>
@@ -36,10 +36,10 @@
         <article>
           <table class="deals">
             <tr>
-              <td class="product"><img src="images/blackbeans.jpg" alt="Black Beans"/><figcaption>Black Beans<br>$2.00<br><button type="button" onclick="addToCart('Black Beans',2)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/bodylotion.jpg" alt="Body Lotion"/><figcaption>Body Lotion<br>$5.00<br><button type="button" onclick = "addToCart('Body Lotion',5)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/shampoo.jpg" alt="Shampoo"/><figcaption>Shampoo<br>$6.90<br><button type="button" onclick = "addToCart('Shampoo',6.9)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/toothpaste.jpg" alt="Toothpaste"/><figcaption>Toothpaste<br>$3.00<br><button type="button" onclick = "addToCart('Toothpaste',3)">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/blackbeans.jpg" alt="Black Beans"/><figcaption>Black Beans<br>$2.00<br><button type="button" onclick="addToCart('Black Beans')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/bodylotion.jpg" alt="Body Lotion"/><figcaption>Body Lotion<br>$5.00<br><button type="button" onclick = "addToCart('Body Lotion')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/shampoo.jpg" alt="Shampoo"/><figcaption>Shampoo<br>$6.90<br><button type="button" onclick = "addToCart('Shampoo')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/toothpaste.jpg" alt="Toothpaste"/><figcaption>Toothpaste<br>$3.00<br><button type="button" onclick = "addToCart('Toothpaste')">Add to Cart</button></figcaption></td>
             </tr>
           </table>
         </article>
@@ -60,16 +60,16 @@
           <h3>Pantry</h3>
           <table>
             <tr>
-                <td class="product"><img src="images/blackbeans.jpg" alt="Black Beans"/><figcaption>Black Beans<br>$2.00<br><button type="button" onclick="addToCart('Black Beans', 2)">Add to Cart</button></figcaption></td>
-                <td class="product"><img src="images/pasta.jpg" alt="Pasta"/><figcaption>Pasta<br>$1.00<br><button type="button" onclick="addToCart('Pasta Pasta', 1)">Add to Cart</button></figcaption></td>
-                <td class="product"><img src="images/wattiesspaghetti.jpg" alt="Watties Spaghetti"/><figcaption>Watties Spaghetti<br>$2.00<br><button type="button" onclick="addToCart('Watties Spaghetti', 2)">Add to Cart</button></figcaption></td>
-                <td class="product"><img src="images/cannedpeaches.jpg" alt="Canned Peaches"/><figcaption>Canned Peaches<br>$2.50<br><button type="button" onclick="addToCart('Canned Peaches', 2.5)">Add to Cart</button></figcaption></td>
+                <td class="product"><img src="images/blackbeans.jpg" alt="Black Beans"/><figcaption>Black Beans<br>$2.00<br><button type="button" onclick="addToCart('Black Beans')">Add to Cart</button></figcaption></td>
+                <td class="product"><img src="images/pasta.jpg" alt="Pasta"/><figcaption>Pasta<br>$1.00<br><button type="button" onclick="addToCart('Pasta Pasta')">Add to Cart</button></figcaption></td>
+                <td class="product"><img src="images/wattiesspaghetti.jpg" alt="Watties Spaghetti"/><figcaption>Watties Spaghetti<br>$2.00<br><button type="button" onclick="addToCart('Watties Spaghetti')">Add to Cart</button></figcaption></td>
+                <td class="product"><img src="images/cannedpeaches.jpg" alt="Canned Peaches"/><figcaption>Canned Peaches<br>$2.50<br><button type="button" onclick="addToCart('Canned Peaches')">Add to Cart</button></figcaption></td>
             </tr>
             <tr>
-              <td class="product"><img src="images/chickensoup.jpg" alt="Chicken Soup"/><figcaption>Chicken Soup<br>$2.80<br><button type="button" onclick="addToCart('Chicken Soup',2.8)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/cornsoup.jpg" alt="Corn Soup"/><figcaption>Corn Soup<br>$2.80<br><button type="button" onclick = "addToCart('Corn Soup',2.8)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/mushroomsoup.jpg" alt="Mushroom Soup"/><figcaption>Mushroom Soup<br>$2.80<br><button type="button" onclick = "addToCart('Mushroom Soup',2.8)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/tomatosoup.jpg" alt="Tomato Soup"/><figcaption>Tomato Soup<br>$2.80<br><button type="button" onclick = "addToCart('Tomato Soup',2.8)">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/chickensoup.jpg" alt="Chicken Soup"/><figcaption>Chicken Soup<br>$2.80<br><button type="button" onclick="addToCart('Chicken Soup')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/cornsoup.jpg" alt="Corn Soup"/><figcaption>Corn Soup<br>$2.80<br><button type="button" onclick = "addToCart('Corn Soup')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/mushroomsoup.jpg" alt="Mushroom Soup"/><figcaption>Mushroom Soup<br>$2.80<br><button type="button" onclick = "addToCart('Mushroom Soup')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/tomatosoup.jpg" alt="Tomato Soup"/><figcaption>Tomato Soup<br>$2.80<br><button type="button" onclick = "addToCart('Tomato Soup')">Add to Cart</button></figcaption></td>
             </tr>
           </table>
         </article>
@@ -77,16 +77,16 @@
           <h3>Chilled, Frozen & Desserts</h3>
           <table>
             <tr>
-              <td class="product"><img src="images/magnumicecream.jpg" alt="Magnum Ice-Cream"/><figcaption>Magnum Ice-Cream<br>$5.90<br><button type="button" onclick="addToCart('Magnum Ice-Cream',5.9)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/cadburychocolate.jpg" alt="Cadbury Chocolate"/><figcaption>Cadbury Chocolate<br>$3.50<br><button type="button" onclick="addToCart('Cadbury Chocolate',3.5)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/kitkat.jpg" alt="Kit Kat"/><figcaption>Kit Kat<br>$3.50<br><button type="button" onclick="addToCart('Kit Kat',3.50)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/shapes.jpg" alt="Shapes"/><figcaption>Shapes<br>$2.50<br><button type="button" onclick="addToCart('Shapes',2.5)"> Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/magnumicecream.jpg" alt="Magnum Ice-Cream"/><figcaption>Magnum Ice-Cream<br>$5.90<br><button type="button" onclick="addToCart('Magnum Ice-Cream')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/cadburychocolate.jpg" alt="Cadbury Chocolate"/><figcaption>Cadbury Chocolate<br>$3.50<br><button type="button" onclick="addToCart('Cadbury Chocolate')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/kitkat.jpg" alt="Kit Kat"/><figcaption>Kit Kat<br>$3.50<br><button type="button" onclick="addToCart('Kit Kat')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/shapes.jpg" alt="Shapes"/><figcaption>Shapes<br>$2.50<br><button type="button" onclick="addToCart('Shapes')"> Add to Cart</button></figcaption></td>
             </tr>
             <tr>
-              <td class="product"><img src="images/frozenpizza.jpg" alt="Frozen Pizza"/><figcaption>Frozen Pizza<br>$4.99<br><button type="button" onclick="addToCart('Frozen Pizza',4.99)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/frozenvege.jpg" alt="Frozen Vege"/><figcaption>Frozen Vege<br>$3.50<br><button type="button" onclick="addToCart('Frozen Vege',3.5)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/nuggets.jpg" alt="Chicken Nuggets"/><figcaption>Chicken Nuggets<br>$10.80<br><button type="button" onclick="addToCart('Nuggets',10.8)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/fries.jpg" alt="Fries"/><figcaption>Fries<br>$3.50<br><button type="button" onclick = "addToCart('Fries',3.5)">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/frozenpizza.jpg" alt="Frozen Pizza"/><figcaption>Frozen Pizza<br>$4.99<br><button type="button" onclick="addToCart('Frozen Pizza')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/frozenvege.jpg" alt="Frozen Vege"/><figcaption>Frozen Vege<br>$3.50<br><button type="button" onclick="addToCart('Frozen Vege')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/nuggets.jpg" alt="Chicken Nuggets"/><figcaption>Chicken Nuggets<br>$10.80<br><button type="button" onclick="addToCart('Nuggets')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/fries.jpg" alt="Fries"/><figcaption>Fries<br>$3.50<br><button type="button" onclick = "addToCart('Fries')">Add to Cart</button></figcaption></td>
             </tr>
         </table>
         </article>
@@ -94,16 +94,16 @@
           <h3>Drinks</h3>
           <table>
             <tr>
-              <td class="product"><img src="images/heinekenbeer.jpg" alt="Heineken Beer"/><figcaption>Heineken Beer<br>$20.90<br><button type="button" onclick = "addToCart('Heineken Beer',20.90)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/beveragebeer.jpg" alt="Beverage Beer"/><figcaption>Beverage Beer<br>$8.90<br><button type="button" onclick = "addToCart('Beverage Beer', 8.9)">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/heinekenbeer.jpg" alt="Heineken Beer"/><figcaption>Heineken Beer<br>$20.90<br><button type="button" onclick = "addToCart('Heineken Beer')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/beveragebeer.jpg" alt="Beverage Beer"/><figcaption>Beverage Beer<br>$8.90<br><button type="button" onclick = "addToCart('Beverage Beer')">Add to Cart</button></figcaption></td>
               <td class="product"><img src="images/fanta.jpg" alt="Fanta"/><figcaption>Fanta<br>$2.00<br><button type="button" onclick = "addToCart('Fanta',2)">Add to Cart</button></figcaption></td>
               <td class="product"><img src="images/coffee.jpg" alt="Coffee"/><figcaption>Coffee<br>$5.70<br><button type="button" onclick = "addToCart('Coffee',5.7)">Add to Cart</button></figcaption></td>
             </tr>
             <tr>
-              <td class="product"><img src="images/cola.jpg" alt="Cola"/><figcaption>Cola<br>$2.00<br><button type="button" onclick = "addToCart('Cola',2)";>Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/milo.jpg" alt="Milo"/><figcaption>Milo<br>$4.90<br><button type="button" onclick = "addToCart('Milo',4.9)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/sprite.jpg" alt="Sprite"/><figcaption>Sprite<br>$2.00<br><button type="button" onclick = "addToCart('Sprite',2)">Add to Cart</button></figcaption></td>
-              <td class="product"><img src="images/nescafe.jpg" alt="Nescafe"/><figcaption>Nescafe<br>$4.50<br><button type="button" onclick = "addToCart('Nescafe',4.5)">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/cola.jpg" alt="Cola"/><figcaption>Cola<br>$2.00<br><button type="button" onclick = "addToCart('Cola')";>Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/milo.jpg" alt="Milo"/><figcaption>Milo<br>$4.90<br><button type="button" onclick = "addToCart('Milo')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/sprite.jpg" alt="Sprite"/><figcaption>Sprite<br>$2.00<br><button type="button" onclick = "addToCart('Sprite')">Add to Cart</button></figcaption></td>
+              <td class="product"><img src="images/nescafe.jpg" alt="Nescafe"/><figcaption>Nescafe<br>$4.50<br><button type="button" onclick = "addToCart('Nescafe')">Add to Cart</button></figcaption></td>
             </tr>
         </table>
         </article>
